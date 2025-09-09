@@ -9,7 +9,7 @@ body {
 
 /****************   Nav Section **********************/
 nav {
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
   display: flex;
   justify-content: space-between;
 
@@ -50,7 +50,7 @@ footer a{
 header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 100px 10px 10px 10px;
 }
 
@@ -64,20 +64,22 @@ header img {
   border: 10px outset darkslategray;
 }
 
-.address {
-  display: flex;
-  justify-content: space-around;
+.subheader{
+  width: 55%;
+  margin-left: 5%;
+  margin-right: auto;
+  text-align: center;
+}
 
+.address {
   font-family: "Karla", sans-serif;
   font-style: italic;
   color: darkslategrey;
 }
 
-.tagline {
-  display: flex; 
+.tagline {  
   padding-bottom: 7px;
-  justify-content: space-around;
-
+  
   font-family: "Karla", sans-serif;
   font-weight: 700; 
   color: darkslategrey;
@@ -137,21 +139,28 @@ section a:hover {
 	display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
-  margin: 15px 15px 15px 0;
+  margin: 15px;
 }
 
 .card img {
+  max-width: 35%;
+  height: auto;
+
   border: 3px double antiquewhite;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
-  border-radius: 5px;
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+
+  border-radius: 7px;
   box-shadow: 0 5px 10px #00000080;
 
   background-color: darkslategray;
@@ -161,6 +170,7 @@ section a:hover {
 
 .card h3{
   color: antiquewhite;
+  font-size: 120%;
 }
 
 .card ul{
@@ -178,7 +188,7 @@ section a:hover {
       display: flex;
       flex-direction: column;
 
-      padding: 10px;
+      padding: 10px 25px 10px 25px;
     }
 
     .three-col {
@@ -188,7 +198,22 @@ section a:hover {
     }
 
     .card {
-      width: 90%;
+      width: 100%;
+    }
+
+    .card h3{
+      font-size: 150%;
+    }
+
+    .subheader {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
     }
 
 }
