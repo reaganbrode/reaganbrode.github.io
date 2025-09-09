@@ -41,6 +41,9 @@ footer {
 
 footer a{
   color: rgb(251, 245, 237);
+  align-self: center;
+  margin-right: 7px;
+  margin-left: 10px;
 }
 
 /*********** Splash Page ************************/
@@ -62,17 +65,21 @@ header img {
 }
 
 .address {
-  padding-left: 15px;
+  display: flex;
+  justify-content: space-around;
 
   font-family: "Karla", sans-serif;
+  font-style: italic;
   color: darkslategrey;
 }
 
 .tagline {
-  padding-left: 55px; 
+  display: flex; 
   padding-bottom: 7px;
+  justify-content: space-around;
 
   font-family: "Karla", sans-serif;
+  font-weight: 700; 
   color: darkslategrey;
 }
 
@@ -98,7 +105,7 @@ section h3 {
 
 section dl {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 10px;
 
   margin-left: 15px;
@@ -135,6 +142,7 @@ section a:hover {
 
 .card img {
   border: 3px double antiquewhite;
+  border-radius: 3px;
 }
 
 .card {
@@ -142,6 +150,9 @@ section a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  border-radius: 5px;
+  box-shadow: 0 5px 10px #00000080;
 
   background-color: darkslategray;
   color: antiquewhite;
@@ -159,6 +170,7 @@ section a:hover {
 .card:hover{
   border: 10px double antiquewhite;
 }
+
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
@@ -189,7 +201,13 @@ section a:hover {
   justify-content: space-around;
   
   padding: 15px;
-  margin: 15px;
+  margin: 15px auto;
+  max-width: 700px;
+
+  border-radius: 5px;
+
+  font-family: "Karla", sans-serif;
+  font-weight: 700; 
 
   border: 5px outset darkslategray;
   background-color: darkslategray;
@@ -201,17 +219,28 @@ input {
   width: 100%;
   border: 1px solid darkslategray;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+
+  border-radius: 3px;
+
 }
 
 textarea {
   width: 100%;
   border: 1px solid darkslategray;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+
+  border-radius: 3px;
+
 }
 
 button {
- background-color: antiquewhite;
+  background-color: antiquewhite;
   color: darkslategrey;
+  font-weight: 700;
   padding: 10px;
   border: solid;
   border-radius: 5px;
@@ -220,28 +249,4 @@ button {
 button:hover {
   background-color: darkslategray;
   color: antiquewhite;
-}
-
-/*****************   Fonts   ********************/
-.spectral-regular {
-  font-family: "Spectral", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.karla> {
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-}
-
-.macondo-swash-caps-regular {
-  font-family: "Macondo Swash Caps", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.zain-regular {
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
